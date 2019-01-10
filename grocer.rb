@@ -2,7 +2,7 @@ def consolidate_cart(cart)
   consolidated_cart = {}
   cart.each do |item_hsh|
     count = cart.count(item_hsh)
-    
+    cart.delete(item_hsh)
   end
 end
 
