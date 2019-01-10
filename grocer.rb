@@ -3,6 +3,7 @@ def consolidate_cart(cart)
   cart.each do |item_hsh|
     count = cart.count(item_hsh)
     item_hsh.each do |item, data|
+    end
     cart.delete(item_hsh)
   end
 end
