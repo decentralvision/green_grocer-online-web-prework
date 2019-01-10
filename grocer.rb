@@ -3,7 +3,7 @@ def consolidate_cart(cart)
   cart.each do |item_hsh|
     count = cart.count(item_hsh)
     item_hsh[1][:count] = count
-    consolidated_cart.store(item_hsh[0])
+    consolidated_cart.store(item_hsh[0], item_hsh)
   end
 end
 
