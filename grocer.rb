@@ -5,6 +5,7 @@ def consolidate_cart(cart)
     item_hsh.each do |item, data|
       consolidated_cart[item] = data
       consolidated_cart[item][data][:count] = count
+      binding.pry
     end
     cart.delete(item_hsh)
   end
